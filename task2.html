@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .logo > span {
+      font-weight: bold;
+      padding: 5px;
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.3rem;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1;
+      box-shadow: 1px 1px 5px grey;
+    }
+    ul {
+      list-style-type: none;
+    }
+    ul li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    .image-container {
+      position: relative;
+    }
+    .img {
+      width: 100%;
+    }
+    .company-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: white;
+    }
+    .company-name span {
+      background-color: rgb(49, 48, 48);
+      padding: 10px;
+    }
+    .project-container{
+        padding: 25px 15px;
+    }
+    .project-heading{
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 1.5rem;
+        border-bottom: 0.5px solid grey;
+        margin: 5px;
+    }
+    .project{
+        max-width: 250px;
+        position: relative;
+        display: inline-block;
+        margin: 15px;
+    }
+    .project-title{
+        position: absolute;
+        top: 0;
+        color: white;
+        font-size: 1.2rem;
+        background-color: black;
+        padding: 10px;
+    }
+    .about-container{
+        padding: 35px 15px ;
+    }
+    .about{
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 20px 0;
+        border-bottom: 1px solid grey;
+    }
+    .about-content{
+        padding: 15px;
+    }
+    .employee-details{
+        max-width: 250px;
+        margin: 15px;
+        display: inline-block;
+    }
+    .emp-name{
+        font-size: 1.5rem;
+        padding: 10px 0;
+    }
+    .emp-role{
+        /* font-size: 1.2rem; */
+        padding: 10px 0;
+    }
+    .emp-description{
+        padding: 10px 0;
+    }
+    button{
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2rem;
+        background-color: grey;
+        border: none;
+        color: white;
+    }
+    .contact-container{
+        padding: 15px;
+    }
+    .contact-title{
+        font-size: 1.5rem;
+        padding: 5px 0;
+        border-bottom: 1px solid grey;
+        margin: 15px 0;
+    }
+
+    input[type="text"]{
+        width: 100%;
+        padding: 5px;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    input[type="submit"]{
+        padding: 10px;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+      
+    }
+    .footer-img{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer{
+        background-color: black;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .footer a{
+        color: white;
+        text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="top">
+      <div class="logo"><span>BR</span> Architects</div>
+      <nav>
+        <ul>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="image-container">
+        <img
+          class="img"
+          src="https://www.w3schools.com/w3images/architect.jpg"
+          alt=""
+        />
+        <div class="company-name">
+          <span>BR</span>
+          Architect
+        </div>
+      </div>
+    </header>
+
+    <div class="project-container">
+         <div class="project-heading">
+            Projects
+         </div>
+    </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+        <div class="project-title">
+             Summer House
+        </div>
+     </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+        <div class="project-title">
+             Brick House
+        </div>
+     </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+        <div class="project-title">
+             Renovated
+        </div>
+     </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+        <div class="project-title">
+             Barn house
+        </div>
+     </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+        <div class="project-title">
+             Summer House
+        </div>
+     </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+        <div class="project-title">
+             Brick House
+        </div>
+     </div>
+    <div class="project">
+        <img class="img" src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+        <div class="project-title">
+             Renovated
+        </div>
+     </div>
+     
+     <div class="about-container">
+        <div class="about">About</div>
+     </div>
+     
+     <div class="about-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolore cumque quam deleniti recusandae autem exercitationem explicabo sunt animi placeat sit architecto minus incidunt voluptas quaerat, consequatur molestiae omnis! Asperiores!
+     </div>
+     
+     <div class="employee-details">
+        <img class="img" src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+        <div class="emp-name">John Doe</div>
+        <div class="emp-role">CEO & Founder</div>
+        <div class="emp-description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+        <button>Contact</button>
+     </div>
+     <div class="employee-details">
+        <img class="img" src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+        <div class="emp-name">Jane Doe</div>
+        <div class="emp-role">Architect</div>
+        <div class="emp-description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+        <button>Contact</button>
+     </div>
+     <div class="employee-details">
+        <img class="img" src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+        <div class="emp-name">Mike Ross</div>
+        <div class="emp-role">Architect</div>
+        <div class="emp-description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+        <button>Contact</button>
+     </div>
+     <div class="employee-details">
+        <img class="img" src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+        <div class="emp-name">Dan Star</div>
+        <div class="emp-role">Architect</div>
+        <div class="emp-description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+        <button>Contact</button>
+     </div>
+
+     <div class="contact-container">
+        <div class="contact-title">Contact</div>
+        <div>Lets get in touch and talk about your next project.</div>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <input type="text" name="" id="" placeholder="Comment">
+            <input type="submit" value="SEND MESSAGE">
+        </form>
+     </div>
+     <img class="footer-img" src="https://www.w3schools.com/w3images/map.jpg" alt="">
+
+     <footer>
+        <div class="footer">
+            Powered by <a href="#">Rupesh</a>
+        </div>
+     </footer>
+  </body>
+</html>
